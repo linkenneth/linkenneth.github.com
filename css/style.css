@@ -1,0 +1,106 @@
+/* === Navigation bar === */
+.navbar {
+    font-size: 13px;
+    /* border-bottom: 1px solid #E3E3E3; */
+}
+
+.navbar .brand {
+    font-weight: bold;
+    text-shadow: 0 2px 0 rgba(255,255,255,.55), 0 0 20px rgba(255,255,255,.1);
+    color: #6A6A6A;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    margin-left: 10px;
+}
+
+/* === Masthead === */
+.masthead {
+    text-align: center;
+    padding: 140px 0 80px 0;
+}
+
+.masthead .container {
+    position: relative;
+    z-index: 2;
+}
+
+.masthead:after {
+    content: '';  /* Somehow makes background display */
+    position: absolute;
+    background: url(../img/shattered.png) repeat center center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Add masthead background gradient transform on hover */
+
+.masthead h1 {
+    font-size: 140px;
+    margin: 20px 0 20px;
+    font-weight: 600;
+    text-shadow: -1px -3px 5px #A6A6A6;
+    color: #222;
+}
+
+.masthead p {
+    font-size: 26px;
+    color: #999;
+    margin: 10px auto 30px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.masthead .btn {
+    font-size: 22px;
+    padding: 12px 22px;
+    letter-spacing: 0px;
+}
+
+/* === Content boxes === */
+.boxes {
+    text-align: center;
+    color: #5A5A5A;
+}
+
+.boxes h2 {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.boxes p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.boxes img {
+    margin: 0 auto 30px;
+}
+
+.boxes h1 {
+    font-size: 60px;
+    font-weight: 200;
+    margin: 60px 0 10px;
+}
+
+.boxes .boxes-description-line {
+    font-size: 20px;
+    margin: 0px auto 40px;
+    line-height: 25px;
+    color: #999;
+}
+
+/* === Footer === */
+.footer {
+    margin-top: 70px;
+    padding: 70px 0;  /* pads both top and bottom by 70px */
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+
+.footer p {
+    color: #777;
+}
+
