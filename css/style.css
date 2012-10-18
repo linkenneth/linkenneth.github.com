@@ -18,6 +18,7 @@
 .masthead {
     text-align: center;
     padding: 140px 0 80px 0;
+    position: relative;
 }
 
 .masthead .container {
