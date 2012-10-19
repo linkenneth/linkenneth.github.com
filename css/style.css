@@ -1,7 +1,7 @@
 /* === Navigation bar === */
 .navbar {
     font-size: 13px;
-    /* border-bottom: 1px solid #E3E3E3; */
+    border-bottom: 1px solid #5A5A5A;
 }
 
 .navbar .brand {
@@ -29,7 +29,7 @@
 .masthead:after {
     content: '';  /* Somehow makes background display */
     position: absolute;
-    background: url(../img/shattered.png) repeat center center;
+    background: url(../img/shattered-sharpened.png) repeat center center;
     top: 0;
     right: 0;
     bottom: 0;
