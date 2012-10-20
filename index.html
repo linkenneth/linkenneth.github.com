@@ -10,59 +10,90 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <!-- Navigation bar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-	<a class="brand" href="#"> Kenneth Lin </a>
+	<a class="brand scroll-to" href="#home"> Kenneth Lin </a>
 	<ul class="nav">
-	  <li class="active"><a href="#">Home</a></li>
-	  <li><a href="#">About</a></li>
-	  <li><a href="#">Portfolio</a></li>
-	  <li><a href="#">Extras</a></li>
+	  <li><a class="scroll-to" href="#home">Home</a></li>
+	  <li><a class="scroll-to" href="#about">About</a></li>
+	  <li><a class="scroll-to" href="#portfolio">Portfolio</a></li>
+	  <li><a class="scroll-to" href="#extras">Extras</a></li>
 	</ul>
       </div>
     </div>
 
     <!-- Masthead -->
-    <div class="hero-unit masthead">
+    <div class="hero-unit masthead" id="home">
       <div class="container">
 	<h1>Visionary.</h1>
 	<p> I'm a programmer with a passion to learn. </p>
-	<p><a class="btn btn-primary btn-large">Who is this guy?</a></p>
+	<p><a class="btn btn-primary btn-large scroll-to" href="#about">
+	  Who is this guy?
+	</a></p>
       </div>
     </div>
 
-    <!-- Body -->
-    <div class="container boxes">
+    <!-- Main -->
+    <div class="container">
 
-      <h1>I'm Kenneth Lin.</h1>
-      <p class="boxes-description-line">
-	I don't usually shower, but when I do, I take 30 minutes.
-      </p>
+      <!-- About -->
+      <div class="main" id="about">
 
-      <div class="row-fluid">
-	<div class="span4">
-	  <img src="img/bs-docs-twitter-github.png"
-	       class="img-polaroid"/>
-	  <h2>By nerds, for nerds.</h2>
-	  <p> Built at Piedmont apartments by Kenneth Lin lolololl trolol. </p>
-	</div>
-	<div class="span4">
-	  <img src="img/bs-docs-responsive-illustrations.png"
-	       class="img-rounded"/>
-	  <h2>To be, or not to be.</h2>
-	  <p> That's not actually a fucking question. You dipshit. </p>
-	</div>
-	<div class="span4">
-	  <img src="img/bs-docs-bootstrap-features.png"
-	       class="img-circle"/>
-	  <h2>Other random text.</h2>
-	  <p> Followed by more random text. </p>
+	<h1>I'm Kenneth Lin.</h1>
+	<p class="main-description-line">
+	  I don't usually shower, but when I do, I take 30 minutes.
+	</p>
+
+	<div class="row-fluid about-imgs">
+	  <div class="span4">
+	    <img src="img/bs-docs-twitter-github.png"
+		 class="img-polaroid"/>
+	    <h2>By nerds, for nerds.</h2>
+	    <p> Built at Piedmont apartments by Kenneth Lin lolololl trolol. </p>
+	  </div>
+	  <div class="span4">
+	    <img src="img/bs-docs-responsive-illustrations.png"
+		 class="img-rounded"/>
+	    <h2>To be, or not to be.</h2>
+	    <p> That's not actually a fucking question. You dipshit. </p>
+	  </div>
+	  <div class="span4">
+	    <img src="img/bs-docs-bootstrap-features.png"
+		 class="img-circle"/>
+	    <h2>Other random text.</h2>
+	    <p> Followed by more random text. </p>
+	  </div>
 	</div>
       </div>
 
       <hr class="soften"/>
+
+      <!-- Portfolio -->
+      <div class="main" id="portfolio">
+
+	<h1> Liberalizing projects. </h1>
+	<p class="main-description-line">
+	  Look no further if you wish to liberate your existence.
+	</p>
+
+	<div class="row-fluid portfolio-imgs">
+	  <div class="span3"
+	       style='background-image: url(img/karaoke-song-voter.jpg)'>
+	  </div>
+	  <div class="span3"
+	       style='background-image: url(img/rackspace-go-game.jpg)'>
+	  </div>
+	  <div class="span3"
+	       style='background-image: url(img/karaoke-song-voter.jpg)'>
+	  </div>
+	  <div class="span3"
+	       style='background-image: url(img/rackspace-go-game.jpg)'>
+	  </div>
+	</div>
+
+      </div>
 
     </div>
 
@@ -77,13 +108,8 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-
-    $(
-
-    );
-
-    </script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
     <!-- Google Analytics -->
     <script type="text/javascript">

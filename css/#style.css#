@@ -87,14 +87,10 @@
 }
 
 .main .main-description-line {
-    font-size: 20px;
-    margin: 0px auto 40px;
-    line-height: 25px;
-    color: #999;
 }
 
 /* === Portfolio === */
-.main > .portfolio-imgs div {
+.main > .portfolio-imgs a {
     height: 250px;
     background: #fff center center no-repeat;
     opacity: 0.65;
