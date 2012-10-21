@@ -5,7 +5,7 @@ jQuery( function($) {
   // Also gives images opacity of 1 on hover
   function scrollToID(j) {
     $("html, body").animate({
-      scrollTop : $(j).offset().top
+      scrollTop : $(j).offset().top - $(".navbar").height()
     }, 500, 'swing');
   }
 
@@ -18,11 +18,13 @@ jQuery( function($) {
     }
   });
 
-  // Fix
-  $(".portfolio-imgs").find("div").addClass("img-polaroid").hover( function() {
+  $(".portfolio-imgs").children("div")
+    .addClass("img-polaroid")
+    .hover( function() {
     $(this).animate({ opacity : 1 }, 100)
   }, function() {
-    $(this).animate({ opacity: 0.6 }, 300)
+    $(this).animate({ opacity: 0.65 }, 300)
   });
+
 
 });

@@ -64,6 +64,7 @@
 .main {
     text-align: center;
     color: #5A5A5A;
+    margin-top: 30px;
 }
 
 .main h2 {
@@ -83,22 +84,34 @@
 .main h1 {
     font-size: 60px;
     font-weight: 200;
-    margin: 60px 0 10px;
+    line-height: 150%;
+    margin-bottom: -10px;
 }
 
 .main .main-description-line {
     font-size: 20px;
-    margin: 0px auto 40px;
-    line-height: 25px;
+    margin-bottom: 40px;
+    line-height: 20px;
     color: #999;
 }
 
 /* === Portfolio === */
-.main > .portfolio-imgs div {
+.main .portfolio-imgs > div {
     height: 250px;
     background: #fff center center no-repeat;
     opacity: 0.65;
     border-radius: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-header > h3 {
+    text-align: left;
+    color: #333;
+}
+
+.modal-body > p {
+    text-align: left;
 }
 
 /* === Footer === */
@@ -111,6 +124,8 @@
 
 .footer p {
     color: #777;
+    font-size: 16px;
+    margin: auto;
 }
 
 /* === Miscellaneous === */
