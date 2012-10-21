@@ -81,7 +81,8 @@
 
 	<!-- Thumbnails -->
 	<div class="row-fluid portfolio-imgs">
-	  <div class="span3"
+	  <div class="span3" id="go-game-thumbnail"
+	       data-toggle="modal" data-target="#go-game"
 	       style='background-image: url(img/rackspace-go-game.jpg)'>
 	  </div>
 	  <div class="span6" id="karaoke-thumbnail"
@@ -97,10 +98,12 @@
 	  <div class="span3"
 	       style='background-image: url(img/karaoke-song-voter.jpg)'>
 	  </div>
-	  <div class="span3"
+	  <div class="span3" id="scheme-thumbnail"
+	       data-toggle="modal" data-target="#scheme"
 	       style='background-image: url(img/furry-bear-scm-interpreter.png)'>
 	  </div>
-	  <div class="span6"
+	  <div class="span6" id="thunder-ant-thumbnail"
+	       data-toggle="modal" data-target="#thunder-ant"
 	       style='background-image: url(img/thunder-ant-sharpened.png)'>
 	  </div>
 	</div>
@@ -111,10 +114,68 @@
 	  <div class="modal-header">
 	    <button type="button" class="close" data-dismiss="modal"
 		    aria-hidden="true">&times;</button>
-	    <h3> Karaoke Song Voter </h3>
+	    <h3> CSUA Hackathon - Karaoke Song Voter </h3>
 	  </div>
 	  <div class="modal-body">
-	    <img class="modal-thumb" src="img/karaoke-song-voter.jpg"/>
+	    <img class="modal-thumb img-polaroid"
+		 src="img/karaoke-song-voter.jpg"/>
+	    <p> The Karaoke Song Voter was my project for my first
+	    hackathon. Using Python's bottle framework, we built a quick
+	    web application that allowed users to upvote various songs,
+	    democratizing the song selection process in gatherings such as
+	    karaokes.
+	    </p>
+	  </div>
+	</div>
+
+	<div class="modal hide fade" id="scheme"
+	     aria-labelledby="scheme-thumbnail" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal"
+		    aria-hidden="true">&times;</button>
+	    <h3> Scheme Interpreter </h3>
+	  </div>
+	  <div class="modal-body">
+	    <img class="modal-thumb img-polaroid"
+		 src="img/furry-bear-scm-interpreter.png"/>
+	    <p> The scheme interpreter.
+	    hackathon. Using Python's bottle framework, we built a quick
+	    web application that allowed users to upvote various songs,
+	    democratizing the song selection process in gatherings such as
+	    karaokes.
+	    </p>
+	  </div>
+	</div>
+
+	<div class="modal hide fade" id="go-game"
+	     aria-labelledby="go-game-thumbnail" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal"
+		    aria-hidden="true">&times;</button>
+	    <h3> Rackspace Hackathon - Go Game </h3>
+	  </div>
+	  <div class="modal-body">
+	    <img class="modal-thumb img-polaroid"
+		 src="img/rackspace-go-game.jpg"/>
+	    <p> The Karaoke Song Voter was my project for my first
+	    hackathon. Using Python's bottle framework, we built a quick
+	    web application that allowed users to upvote various songs,
+	    democratizing the song selection process in gatherings such as
+	    karaokes.
+	    </p>
+	  </div>
+	</div>
+
+	<div class="modal hide fade" id="thunder-ant"
+	     aria-labelledby="thunder-ant-thumbnail" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal"
+		    aria-hidden="true">&times;</button>
+	    <h3> Big Hack (Stanford vs. Cal) - Thunder-Ant </h3>
+	  </div>
+	  <div class="modal-body">
+	    <img class="modal-thumb img-polaroid"
+		 src="img/thunder-ant-sharpened.png"/>
 	    <p> The Karaoke Song Voter was my project for my first
 	    hackathon. Using Python's bottle framework, we built a quick
 	    web application that allowed users to upvote various songs,
