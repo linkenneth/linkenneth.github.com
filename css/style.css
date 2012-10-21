@@ -1,7 +1,12 @@
 /* === Navigation bar === */
 .navbar {
-    font-size: 13px;
     border-bottom: 1px solid #5A5A5A;
+}
+
+.navbar .nav > li {
+    font-size: 16px;
+    /* font-family: "Titillium Web", sans-serif; */
+    /* text-transform: uppercase; */
 }
 
 .navbar .brand {
@@ -19,6 +24,11 @@
     text-align: center;
     padding: 200px 0 150px 0;
     position: relative;
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    border-radius: 0px;
+    background-color: blue;
 }
 
 .masthead .container {
@@ -29,9 +39,8 @@
 .masthead:after {
     content: '';  /* Somehow makes background display */
     position: absolute;
-    /* background: url(../../../libraries/patterns/subtle-transparent-bgs/exclusive_paper.png) repeat center center; */
-    background: url(../img/030-preview.jpg) no-repeat center center;
-    background-size: cover;
+    /* Inverted opacity gradient mask */
+    background: url(../../../libraries/patterns/subtle-transparent-bgs/hexellence.png), -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.8) 62%);
     top: 0;
     right: 0;
     bottom: 0;
@@ -149,8 +158,5 @@ hr.soften {
 }
 
 body {
-    background-image: url(../img/subtle-pattern-7.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
+    background: url(../img/subtle-pattern-7.jpg);
 }
