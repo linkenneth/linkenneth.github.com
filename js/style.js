@@ -19,11 +19,11 @@ jQuery( function($) {
   });
 
   $(".portfolio-thumb").hover( function() {
-    $(this).animate({ opacity : 1 }, 100);
-    $(this).next().animate({ top : "100%" }, 400);
+    $(this).stop().animate({ opacity : 1 }, 100);
+    $(this).next().stop().animate({ top : "100%" }, 400);
   }, function() {
-    $(this).animate({ opacity: 0.65 }, 300);
-    $(this).next().animate({ top : "80%" }, 400);
+    $(this).stop().animate({ opacity: 0.65 }, 300);
+    $(this).next().stop().animate({ top : "80%" }, 400);
   });
 
 
