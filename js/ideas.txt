@@ -1,5 +1,3 @@
 - Changing background of masthead
 - Changing icons for pictures in about page
 - Add vim controls to navigation
-- Scrollspy
-- One page that scrolls all the way down
