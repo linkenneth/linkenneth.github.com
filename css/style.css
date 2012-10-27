@@ -50,7 +50,7 @@
     content: '';  /* Somehow makes background display */
     position: absolute;
     /* Inverted opacity gradient mask */
-    background: url(../img/hexellence.png), -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.8) 62%);
+    background: url(../img/hexellence.png), -webkit-linear-gradient(top, rgba(255,255,255,0) 102px, rgba(255,255,255,0.8) 62%);
     top: 0;
     right: 0;
     bottom: 0;

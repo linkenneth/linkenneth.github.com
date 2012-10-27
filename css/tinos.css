@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tinos'), url(tinos.woff) format('woff');
+}
