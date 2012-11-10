@@ -168,15 +168,31 @@
 }
 
 /* === Modals === */
-.modal.fade {
-    width: 54% !important;
-    left: 23% !important;
-    margin: 0;
-    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+.body-lock {
+    overflow-y: hidden;
 }
 
-.modal.fade.in {
-    top: 8%;
+.modal-container {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    z-index: 5000;
+}
+
+.project-modal {
+    position: relative;
+    display: none;
+    width: 54% !important;
+    left: 23% !important;
+    margin: 5% 0;
+    background-color: whiteSmoke;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
 
 .project-modal > .modal-body {

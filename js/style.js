@@ -26,5 +26,23 @@ jQuery( function($) {
     $(this).next().stop().animate({ top : "80%" }, 400);
   });
 
+  modalTemplate = _.template($("#project-modal-template").html());
+
+  $(".portfolio-thumb").click( function(e) {
+    $(".modal-container")
+      .append(modalTemplate(modals[$(e.target).attr("data-target")]))
+      .fadeToggle().children(".project-modal").slideToggle();
+    $("body").addClass("body-lock");
+    $(".project-modal").click( function(e) {
+      e.stopPropagation();
+    });
+  });
+
+  $(".modal-container").click( function() {
+    $(this).fadeToggle().children(".project-modal").slideToggle( function() {
+      $(this).remove();
+    });
+    $("body").removeClass("body-lock");
+  });
 
 });

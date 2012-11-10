@@ -94,7 +94,7 @@
 	<div class="row-fluid portfolio-imgs">
 	  <div class="span3">
 	    <div class="portfolio-thumb" id="scheme-thumbnail"
-		 data-toggle="modal" data-target="#scheme"
+		 data-target="scheme"
 		 style='background-image: url(img/furry-bear-scm-interpreter.png)'>
 	    </div>
 	    <div class="portfolio-name">
@@ -105,7 +105,7 @@
 	  </div>
 	  <div class="span6">
 	    <div class="portfolio-thumb" id="karaoke-thumbnail"
-		 data-toggle="modal" data-target="#karaoke"
+		 data-target="karaoke"
 		 style='background-image: url(img/karaoke-song-voter.jpg)'>
 	    </div>
 	    <div class="portfolio-name">
@@ -129,7 +129,7 @@
 	<div class="row-fluid portfolio-imgs">
 	  <div class="span5">
 	    <div class="portfolio-thumb" id="go-game-thumbnail"
-		 data-toggle="modal" data-target="#go-game"
+		 data-target="go"
 		 style='background-image: url(img/rackspace-go-game.jpg)'>
 	    </div>
 	    <div class="portfolio-name">
@@ -140,7 +140,7 @@
 	  </div>
 	  <div class="span7">
 	    <div class="portfolio-thumb" id="thunder-ant-thumbnail"
-		 data-toggle="modal" data-target="#thunder-ant"
+		 data-target="thunder_ant"
 		 style='background-image: url(img/thunder-ant-sharpened.png)'>
 	    </div>
 	    <div class="portfolio-name">
@@ -151,86 +151,29 @@
 	  </div>
 	</div>
 
-	<!-- Modals -->
-	<div class="project-modal modal hide fade" id="karaoke"
-	     aria-labelledby="karaoke-thumbnail" >
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">
-	      &times;
-	    </button>
-	    <h3> CSUA Hackathon - Karaoke Song Voter </h3>
-	  </div>
-	  <div class="modal-body">
-	    <img class="modal-thumb"
-		 src="img/karaoke-song-voter.jpg"/>
-	    <p> The Karaoke Song Voter was my project for my first
-	    hackathon. Using Python's bottle framework, we built a quick
-	    web application that allowed users to upvote various songs,
-	    democratizing the song selection process in gatherings such as
-	    karaokes.
-	    </p>
-	  </div>
+	<!-- Modal Container -->
+	<div class="modal-container">
+	  <!-- Modals rendered here -->
 	</div>
 
-	<div class="project-modal modal hide fade" id="scheme"
-	     aria-labelledby="scheme-thumbnail" >
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">
-	      &times;
-	    </button>
-	    <h3> Scheme Interpreter </h3>
+	<script id="project-modal-template" type="text/template">
+	  <div class="project-modal" id="<%= id %>"
+	       aria-labelledby="scheme-thumbnail" >
+	    <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal">
+		&times;
+	      </button>
+	      <h3> <%= name %> </h3>
+	    </div>
+	    <div class="modal-body">
+	      <img class="modal-thumb" src="<%= image %>"/>
+	      <%= content %>
+	    </div>
+	    <div class="modal-footer">
+	      <%= quote %>
+	    </div>
 	  </div>
-	  <div class="modal-body">
-	    <img class="modal-thumb"
-		 src="img/furry-bear-scm-interpreter.png"/>
-	    <p> The scheme interpreter.
-	    hackathon. Using Python's bottle framework, we built a quick
-	    web application that allowed users to upvote various songs,
-	    democratizing the song selection process in gatherings such as
-	    karaokes.
-	    </p>
-	  </div>
-	</div>
-
-	<div class="project-modal modal hide fade" id="go-game"
-	     aria-labelledby="go-game-thumbnail" >
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">
-	      &times;
-	    </button>
-	    <h3> Rackspace Hackathon - Go Game </h3>
-	  </div>
-	  <div class="modal-body">
-	    <img class="modal-thumb"
-		 src="img/rackspace-go-game.jpg"/>
-	    <p> The Karaoke Song Voter was my project for my first
-	    hackathon. Using Python's bottle framework, we built a quick
-	    web application that allowed users to upvote various songs,
-	    democratizing the song selection process in gatherings such as
-	    karaokes.
-	    </p>
-	  </div>
-	</div>
-
-	<div class="project-modal modal hide fade" id="thunder-ant"
-	     aria-labelledby="thunder-ant-thumbnail" >
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">
-	      &times;
-	    </button>
-	    <h3> Big Hack (Stanford vs. Cal) - Thunder-Ant </h3>
-	  </div>
-	  <div class="modal-body">
-	    <img class="modal-thumb"
-		 src="img/thunder-ant-sharpened.png"/>
-	    <p> The Karaoke Song Voter was my project for my first
-	    hackathon. Using Python's bottle framework, we built a quick
-	    web application that allowed users to upvote various songs,
-	    democratizing the song selection process in gatherings such as
-	    karaokes.
-	    </p>
-	  </div>
-	</div>
+	</script>
 
       </div>
 
@@ -262,9 +205,10 @@
     <!-- JavaScript -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/underscore-1.3.1.js"></script>
 
+    <script type="text/javascript" src="js/modals.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
 
     <!-- Google Analytics -->
     <script type="text/javascript">
