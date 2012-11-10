@@ -168,19 +168,53 @@
 }
 
 /* === Modals === */
+.modal.fade {
+    width: 54% !important;
+    left: 23% !important;
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+.modal.fade.in {
+    top: 8%;
+}
+
+.project-modal > .modal-body {
+    max-height: none;
+}
+
 .modal-header > h3 {
     text-align: left;
     color: #333;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 7px;
+    padding-left: 10px;
 }
 
 .modal-body > p {
     text-align: left;
+    margin-left: 100px;
+    border-left: 1px #D8D8D8 solid;
+    border-top: 1px #D8D8D8 solid;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-right: 50px;
 }
 
 .modal-thumb {
-    max-width: 75%;
     margin: 10px auto 20px;
+    display: block;
+    min-width: 60%;
+    margin: 10px auto 40px;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
+
+/* add faded backgrounds with pictures of project into modal */
 
 /* === Footer === */
 .footer {
