@@ -40,9 +40,6 @@
 	<div class="masthead-contain">
 	  <h1>Visionary.</h1>
 	  <p> I'm a programmer with a passion to learn. </p>
-	  <!-- <p><a class="btn btn-primary btn-large scroll-to" href="#about"> -->
-	  <!--   Who is this guy? -->
-	  <!-- </a></p> -->
 	</div>
       </div>
     </div>
@@ -151,6 +148,20 @@
 	  </div>
 	</div>
 
+	<div class="row-fluid portfolio-imgs">
+	  <div class="span7">
+	    <div class="portfolio-thumb" id="chain-reaction-thumbnail"
+		 data-target="chain_reaction"
+		 style='background-image: url(img/chain-reaction.jpg)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		Chain Reaction Hackathon - More is More
+	      </p>
+	    </div>
+	  </div>
+	</div>
+
 	<!-- Modal Container -->
 	<div class="modal-container">
 	  <!-- Modals rendered here -->
@@ -166,7 +177,7 @@
 	      <h3> <%= name %> </h3>
 	    </div>
 	    <div class="modal-body">
-	      <img class="modal-thumb" src="<%= image %>"/>
+	      <img class="modal-thumb" src="<%= image %>" href="<%= link %>"/>
 	      <%= content %>
 	    </div>
 	    <div class="modal-footer">
@@ -196,8 +207,8 @@
 	<p class="pull-right">
 	  <a class="scroll-to" href="#home"> Back to top </a>
 	</p>
-	<p> Built with BootStrap, jQuery, JavaScript, HTML, CSS, Emacs, the
-	internet, crumbled scrap papers, dried out pens, and lots of
+	<p> Built with BootStrap, jQuery, Backbone.js, JavaScript, HTML,
+	CSS, Emacs, the internet, crumbled scrap papers, and lots of
 	coffee. </p>
       </div>
     </footer>

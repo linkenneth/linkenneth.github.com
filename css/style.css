@@ -190,7 +190,7 @@
     display: none;
     width: 54% !important;
     left: 23% !important;
-    margin: 5% 0;
+    margin: 50px 0;
     background-color: whiteSmoke;
     -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
@@ -225,9 +225,14 @@
     margin: 10px auto 20px;
     display: block;
     min-width: 60%;
+    max-width: 85%;
     margin: 10px auto 40px;
     cursor: pointer;
     -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+.modal-footer {
+    font-style: italic;
 }
 
 /* add faded backgrounds with pictures of project into modal */

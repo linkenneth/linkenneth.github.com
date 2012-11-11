@@ -36,6 +36,9 @@ jQuery( function($) {
     $(".project-modal").click( function(e) {
       e.stopPropagation();
     });
+    $(".modal-thumb").click( function(e) {
+      window.open($(this).attr("href"), "_blank");
+    });
   });
 
   $(".modal-container").click( function() {
