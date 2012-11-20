@@ -62,6 +62,16 @@ modals = {
     content: ["<p> The Chain Reaction hackathon was my first project that",
 	      "eworloparepwoui"].join(" "),
     quote: "First place - Chain Reaction Hackathon."
+  },
+
+  mind_scorpion: {
+    id: "mind_scorpion",
+    name: "H@B-IEEE Hackathon - MindScorpion RC Cars",
+    link: "https://github.com/linkenneth/neurosky",
+    image: "img/mind-scorpion.jpg",
+    content: ["<p> Mind Scorpion hardware hack",
+	      "eworloparepwoui"].join(" "),
+    quote: "Best Hardware Hack"
   }
 
 }
