@@ -72,7 +72,17 @@ modals = {
     content: ["<p> Mind Scorpion hardware hack",
 	      "eworloparepwoui"].join(" "),
     quote: "Best Hardware Hack"
-  }
+  },
+
+  lines_of_action: {
+    id: "lines_of_action",
+    name: "CS61B - Lines of Action",
+    link: "https://github.com/linkenneth/loa",
+    image: "img/mind-scorpion.jpg",
+    content: ["<p> Mind Scorpion hardware hack",
+	      "eworloparepwoui"].join(" "),
+    quote: "CS61B final project"
+  },
 
 }
 
