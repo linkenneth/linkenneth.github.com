@@ -28,19 +28,6 @@ modals = {
     quote: "Scheme interpreter"
   },
 
-  go: {
-    id: "go",
-    name: "Rackspace Hackathon - Go Game",
-    link: "https://github.com/linkenneth/RackSpace-HackDay-Go-Game",
-    image: "img/rackspace-go-game.jpg",
-    content: ["<p> The Karaoke Song Voter was my project for my first",
-	      "hackathon. Using Python's bottle framework, we built a quick",
-	      "web application that allowed users to upvote various songs,",
-	      "democratizing the song selection process in gatherings such as",
-	      "karaokes. </p>"].join(" "),
-    quote: "GO!"
-  },
-
   thunder_ant: {
     id: "thunder_ant",
     name: "Big Hack (Stanford vs. Cal) - Thunder-Ant",
@@ -83,6 +70,16 @@ modals = {
 	      "eworloparepwoui"].join(" "),
     quote: "CS61B final project"
   },
+
+  benchmark: {
+    id: "benchmark",
+    name: "Benchmark Suite",
+    link: "https://github.com/linkenneth/benchmark",
+    image: "img/mind-scorpion.jpg",
+    content: ["<p> Benchmark with Kiyoshi",
+	      "eworloparepwoui"].join(" "),
+    quote: "Benchmarking different algorithms on different languages"
+  }
 
 }
 

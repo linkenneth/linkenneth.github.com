@@ -41,6 +41,8 @@
 	  <h1>Visionary.</h1>
 	  <p> I'm a programmer with a passion to learn. </p>
 	</div>
+	<img src="img/profile.jpg" class="masthead-profile-img img-polaroid
+					  img-rounded"/>
       </div>
     </div>
 
@@ -57,20 +59,20 @@
 
 	<div class="row-fluid about-imgs">
 	  <div class="span4">
-	    <img src="img/bs-docs-twitter-github.png"
+	    <img src="img/i1.jpg"
 		 class="img-polaroid"/>
 	    <h2>By nerds, for nerds.</h2>
 	    <p> Built at Piedmont apartments by Kenneth Lin lolololl trolol. </p>
 	  </div>
 	  <div class="span4">
-	    <img src="img/bs-docs-responsive-illustrations.png"
-		 class="img-rounded"/>
+	    <img src="img/i2.jpg"
+		 class="img-polaroid"/>
 	    <h2>To be, or not to be.</h2>
 	    <p> That's not actually a fucking question. You dipshit. </p>
 	  </div>
 	  <div class="span4">
-	    <img src="img/bs-docs-bootstrap-features.png"
-		 class="img-circle"/>
+	    <img src="img/i3.jpg"
+		 class="img-polaroid"/>
 	    <h2>Other random text.</h2>
 	    <p> Followed by more random text. </p>
 	  </div>
@@ -88,66 +90,6 @@
 	</p>
 
 	<!-- Thumbnails -->
-	<div class="row-fluid portfolio-imgs">
-	  <div class="span3">
-	    <div class="portfolio-thumb" id="scheme-thumbnail"
-		 data-target="scheme"
-		 style='background-image: url(img/furry-bear-scm-interpreter.png)'>
-	    </div>
-	    <div class="portfolio-name">
-	      <p>
-		CS61A - Scheme Interpreter
-	      </p>
-	    </div>
-	  </div>
-	  <div class="span6">
-	    <div class="portfolio-thumb" id="karaoke-thumbnail"
-		 data-target="karaoke"
-		 style='background-image: url(img/karaoke-song-voter.jpg)'>
-	    </div>
-	    <div class="portfolio-name">
-	      <p>
-		CSUA Hackathon - Karaoke Song Voter
-	      </p>
-	    </div>
-	  </div>
-	  <div class="span3">
-	    <div class="portfolio-thumb"
-		 style='background-image: url(img/enigma-encryption.png)'>
-	    </div>
-	    <div class="portfolio-name">
-	      <p>
-		CS61B - Enigma Encryption
-	      </p>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="row-fluid portfolio-imgs">
-	  <div class="span5">
-	    <div class="portfolio-thumb" id="go-game-thumbnail"
-		 data-target="go"
-		 style='background-image: url(img/rackspace-go-game.jpg)'>
-	    </div>
-	    <div class="portfolio-name">
-	      <p>
-		Rackspace Hackathon - Go Game
-	      </p>
-	    </div>
-	  </div>
-	  <div class="span7">
-	    <div class="portfolio-thumb" id="thunder-ant-thumbnail"
-		 data-target="thunder_ant"
-		 style='background-image: url(img/thunder-ant-sharpened.png)'>
-	    </div>
-	    <div class="portfolio-name">
-	      <p>
-		Big Hack - Thunder Ant
-	      </p>
-	    </div>
-	  </div>
-	</div>
-
 	<div class="row-fluid portfolio-imgs">
 	  <div class="span7">
 	    <div class="portfolio-thumb" id="chain-reaction-thumbnail"
@@ -174,14 +116,61 @@
 	</div>
 
 	<div class="row-fluid portfolio-imgs">
-	  <div class="span3">
+	  <div class="span5">
 	    <div class="portfolio-thumb" id="lines-of-action-thumbnail"
 		 data-target="lines_of_action"
-		 style='background-image: black'>
+		 style='background-image: url(img/rackspace-go-game.jpg)'>
 	    </div>
 	    <div class="portfolio-name">
 	      <p>
 		CS61B - Lines of Action
+	      </p>
+	    </div>
+	  </div>
+	  <div class="span7">
+	    <div class="portfolio-thumb" id="thunder-ant-thumbnail"
+		 data-target="thunder_ant"
+		 style='background-image: url(img/thunder-ant-sharpened.png)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		Big Hack - Thunder Ant
+	      </p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row-fluid portfolio-imgs">
+	  <div class="span3">
+	    <div class="portfolio-thumb" id="scheme-thumbnail"
+		 data-target="scheme"
+		 style='background-image: url(img/furry-bear-scm-interpreter.png)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		CS61A - Scheme Interpreter
+	      </p>
+	    </div>
+	  </div>
+	  <div class="span6">
+	    <div class="portfolio-thumb" id="karaoke-thumbnail"
+		 data-target="karaoke"
+		 style='background-image: url(img/karaoke-song-voter.jpg)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		CSUA Hackathon - Karaoke Song Voter
+	      </p>
+	    </div>
+	  </div>
+	  <div class="span3">
+	    <div class="portfolio-thumb" id="benchmark-thumbnail"
+		 data-target="benchmark"
+		 style='background-image: url(img/enigma-encryption.png)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		Benchmark Suite
 	      </p>
 	    </div>
 	  </div>
@@ -232,9 +221,11 @@
 	<p class="pull-right">
 	  <a class="scroll-to" href="#home"> Back to top </a>
 	</p>
-	<p> Built with BootStrap, jQuery, Backbone.js, JavaScript, HTML,
-	CSS, Emacs, the internet, crumbled scrap papers, and lots of
-	coffee. </p>
+	<div class="footer-block">
+	  <p> Built with BootStrap, jQuery, Backbone.js, JavaScript, HTML,
+	  CSS, Emacs, the internet, crumbled scrap papers, and lots of
+	  coffee. </p>
+	</div>
       </div>
     </footer>
 
