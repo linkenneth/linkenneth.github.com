@@ -75,7 +75,7 @@ modals = {
     id: "benchmark",
     name: "Benchmark Suite",
     link: "https://github.com/linkenneth/benchmark",
-    image: "img/mind-scorpion.jpg",
+    image: "img/benchmark.png",
     content: ["<p> Benchmark with Kiyoshi",
 	      "eworloparepwoui"].join(" "),
     quote: "Benchmarking different algorithms on different languages"
