@@ -48,4 +48,16 @@ jQuery( function($) {
     $("body").removeClass("body-lock");
   });
 
+  skillNavTemplate = _.template($("#skill-navbar-template").html());
+
+  skills.forEach( function(skill) {
+    $(".skills-navbar").children("ul").append(skillNavTemplate(skill));
+  });
+
+  $(".skills-navbar").find(".skill-item").hover( function() {
+    $(this).stop().animate({ opacity : 1 }, 200);
+  }, function() {
+    $(this).stop().animate({ opacity: 0.8 }, 200);
+  });
+
 });
