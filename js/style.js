@@ -55,9 +55,9 @@ jQuery( function($) {
   });
 
   $(".skills-navbar").find(".skill-item").hover( function() {
-    $(this).stop().animate({ opacity : 1 }, 200);
+    $(this).stop().animate({ opacity : 1 }, 100);
   }, function() {
-    $(this).stop().animate({ opacity: 0.8 }, 200);
+    $(this).stop().animate({ opacity: 0.7 }, 100);
   });
 
 });
