@@ -19,7 +19,7 @@ modals = {
     id: "scheme",
     name: "Scheme Interpreter",
     link: "https://github.com/linkenneth/furry-bear",
-    image: "img/furry-bear-scm-interpreter.png",
+    image: "img/furry-bear-scm.png",
     content: ["<p> The scheme interpreter.",
 	      "hackathon. Using Python's bottle framework, we built a quick",
 	      "web application that allowed users to upvote various songs,",
@@ -79,6 +79,16 @@ modals = {
     content: ["<p> Benchmark with Kiyoshi",
 	      "eworloparepwoui"].join(" "),
     quote: "Benchmarking different algorithms on different languages"
+  },
+
+  eeg: {
+    id: "eeg",
+    name: "EE40 - Electroencephalogram",
+    link: "https://github.com/linkenneth/electroencephalography",
+    image: "img/eeg1.jpg",
+    content: ["<p> EEG project for EE40",
+	      "eworloparepwoui"].join(" "),
+    quote: "Filtering for EEGs"
   }
 
 }

@@ -26,6 +26,14 @@ jQuery( function($) {
     $(this).next().stop().animate({ top : "80%" }, 400);
   });
 
+  function closeModal() {
+    $(".modal-container").fadeToggle().children(".project-modal")
+      .slideToggle( function() {
+      $(this).remove();
+    });
+    $("body").removeClass("body-lock");
+  };
+
   modalTemplate = _.template($("#project-modal-template").html());
 
   $(".portfolio-thumb").click( function(e) {
@@ -39,14 +47,10 @@ jQuery( function($) {
     $(".modal-thumb").click( function(e) {
       window.open($(this).attr("href"), "_blank");
     });
+    $(".close").click(closeModal);
   });
 
-  $(".modal-container").click( function() {
-    $(this).fadeToggle().children(".project-modal").slideToggle( function() {
-      $(this).remove();
-    });
-    $("body").removeClass("body-lock");
-  });
+  $(".modal-container").click(closeModal);
 
   skillNavTemplate = _.template($("#skill-navbar-template").html());
 
