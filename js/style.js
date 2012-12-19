@@ -37,9 +37,11 @@ jQuery( function($) {
   modalTemplate = _.template($("#project-modal-template").html());
 
   $(".portfolio-thumb").click( function(e) {
+    modal = modals[$(e.target).attr("data-target")]
     $(".modal-container")
-      .append(modalTemplate(modals[$(e.target).attr("data-target")]))
+      .append(modalTemplate(modal))
       .fadeToggle().children(".project-modal").slideToggle();
+    $(".modal-content").load("./modal-content/" + modal.id + ".html");
     $("body").addClass("body-lock");
     $(".project-modal").click( function(e) {
       e.stopPropagation();
