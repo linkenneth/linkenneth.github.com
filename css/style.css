@@ -215,7 +215,7 @@
     padding-left: 10px;
 }
 
-.modal-body > p {
+.modal-content {
     text-align: left;
     margin-left: 100px;
     border-left: 1px #D8D8D8 solid;
