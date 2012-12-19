@@ -1,19 +1,19 @@
 /* Modal data */
 
-modals = {
+MODAL_DIR = "./modal-content/"
 
-  /* Make content reading an external file. That way easier to add/write. */
+modals = {
 
   karaoke: {
     id: "karaoke",
     name: "CSUA Hackathon - Karaoke Song Voter",
     link: "https://github.com/linkenneth/Karaoke-Song-Voter",
     image: "img/karaoke-song-voter.jpg",
-    content: ["<p> The Karaoke Song Voter was my project for my first",
-	      "hackathon. Using Python's bottle framework, we built a quick",
-	      "web application that allowed users to upvote various songs,",
-	      "democratizing the song selection process in gatherings such as",
-	      "karaokes. </p>"].join(" "),
+    content: $.ajax({
+      url : MODAL_DIR + "karaoke.html",
+      async : false,
+      dataType : "html"
+    }),
     quote: "Sing your hearts out"
   },
 
