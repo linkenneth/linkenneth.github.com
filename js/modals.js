@@ -2,6 +2,8 @@
 
 modals = {
 
+  /* Make content reading an external file. That way easier to add/write. */
+
   karaoke: {
     id: "karaoke",
     name: "CSUA Hackathon - Karaoke Song Voter",
@@ -89,7 +91,7 @@ modals = {
     content: ["<p> EEG project for EE40",
 	      "eworloparepwoui"].join(" "),
     quote: "Filtering for EEGs"
-  }
+  },
 
 }
 

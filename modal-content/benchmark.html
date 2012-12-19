@@ -1,0 +1,41 @@
+<p>
+  After I heard about the reknowned speed of Google's V8 JavaScript engine
+  and had a glimpse of Cython, I became more and more interested in how
+  Cython and JavaScript actually compared to a myriad of other
+  languages. That, combined with my roommate Andrew's constant praise for
+  Haskell and the fact that no benchmarks out there seemed to provide me
+  the exact comparisons I wanted, inspired me to create a simple
+  benchmarking suite to see for myself.
+
+  <!-- insert graphs here -->
+  Currently, results are pending. Here are some preliminary conclusions:
+  <ol>
+    <li>
+      It would seem that, as predicted, JavaScript runs unimaginably fast -
+      nearly as fast as compiled languages such as C and Java.
+    </li>
+    <li>
+      Java, contrary to my beliefs, was also very nearly as fast as C, but
+      with larger initial start-up times (due to starting of the JVM).
+    </li>
+    <li>
+      Properly generated Cython can be as fast as both Java and C. Of
+      course, this is expected because Cython compiles into C, but
+      Cython-generated C files are upwards of 1,500 lines long, while
+      normal C programs doing the same thing are much much less. Could this
+      be the result of certain optimizations Cython performs for us
+      automatically that we could not know?
+    </li>
+    <li>
+      Compiled Haskell is still slower than Google's JavaScript, but
+      significantly faster than most dynamically interpreted languages.
+    </li>
+    <li>
+      Out of the dynamically interpreted languages (not including
+      JavaScript), Ruby is now slightly faster than Python now, probably
+      due to its new JIT compiler. Dynamically interpreted Haskell is
+      god-awful slow. (TODO: test R, Matlab, Octave, Julia?)
+    </li>
+  </ol>
+
+</p>
