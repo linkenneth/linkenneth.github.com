@@ -49,6 +49,8 @@
     position: absolute;
     /* Inverted opacity gradient mask */
     background: url(../img/hexellence.png), -webkit-linear-gradient(top, rgba(255,255,255,0) 102px, rgba(255,255,255,0.8) 62%);
+    background: url(../img/hexellence.png), -moz-linear-gradient(top, rgba(255,255,255,0) 102px, rgba(255,255,255,0.8) 62%);
+    background: url(../img/hexellence.png), linear-gradient(top, rgba(255,255,255,0) 102px, rgba(255,255,255,0.8) 62%);
     top: 0;
     right: 0;
     bottom: 0;
@@ -64,15 +66,12 @@
     text-shadow: -1px -3px 5px #A6A6A6;
     color: #222;
     font-family: "Tinos", sans-serif;
-    float: right;
 }
 
 .masthead p {
     color: #999;
     font-weight: 400;
     letter-spacing: -1px;
-    float: left;
-    clear: right;
     font-size: 22px;
     margin-top: -20px;
     margin-left: 30px;
@@ -90,8 +89,10 @@
 
 .masthead-profile-img {
     float: right;
-    height: 280px;
+    height: 270px;
     -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 /* === Main === */
@@ -196,7 +197,7 @@
     left: 23% !important;
     margin: 50px 0;
     background-color: whiteSmoke;
-    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
 
 .project-modal > .modal-body {
@@ -232,7 +233,7 @@
     max-width: 85%;
     margin: 10px auto 40px;
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
 
 .modal-footer {
