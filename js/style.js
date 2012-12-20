@@ -36,12 +36,19 @@ jQuery( function($) {
 
   modalTemplate = _.template($("#project-modal-template").html());
 
+  _.each(modals, function(modal) {
+    $.ajax({
+      url : "./modal-content/" + modal.id + ".html",
+      dataType : "html",
+      success : function(data) { modal.content = data; }
+    });
+  });
+
   $(".portfolio-thumb").click( function(e) {
     modal = modals[$(e.target).attr("data-target")]
-    $(".modal-container")
-      .append(modalTemplate(modal))
-      .fadeToggle().children(".project-modal").slideToggle();
-    $(".modal-content").load("./modal-content/" + modal.id + ".html");
+    var modalContainer = $(".modal-container").append(modalTemplate(modal));
+    $(".modal-content").html(modal.content);
+    modalContainer.fadeToggle().children(".project-modal").slideToggle();
     $("body").addClass("body-lock");
     $(".project-modal").click( function(e) {
       e.stopPropagation();
@@ -56,7 +63,7 @@ jQuery( function($) {
 
   skillNavTemplate = _.template($("#skill-navbar-template").html());
 
-  skills.forEach( function(skill) {
+  _.each(skills, function(skill) {
     $(".skills-navbar").children("ul").append(skillNavTemplate(skill));
   });
 
