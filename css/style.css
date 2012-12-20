@@ -301,8 +301,7 @@
     margin-top: 70px;
     padding: 70px 0;  /* pads both top and bottom by 70px */
     border-top: 1px solid #e5e5e5;
-    background-color: #f5f5f5;
-    background-image: url(../img/subtle-pattern-5.jpg);
+    background: url(../img/subtle-pattern-5.jpg) repeat center;
 }
 
 .footer p {
