@@ -12,7 +12,7 @@ jQuery( function($) {
   $("a.scroll-to").click( function(event) {
     event.preventDefault();
     var localPat = /#\w+/;
-    match = localPat.exec($(this).prop("href"));
+    var match = localPat.exec($(this).prop("href"));
     if (match != null) {
       scrollToID(match[0]);
     }
@@ -34,7 +34,7 @@ jQuery( function($) {
     $("body").removeClass("body-lock");
   };
 
-  modalTemplate = _.template($("#project-modal-template").html());
+  var modalTemplate = _.template($("#project-modal-template").html());
 
   _.each(modals, function(modal) {
     $.ajax({
@@ -45,7 +45,7 @@ jQuery( function($) {
   });
 
   $(".portfolio-thumb").click( function(e) {
-    modal = modals[$(e.target).attr("data-target")]
+    var modal = modals[$(e.target).attr("data-target")]
     var modalContainer = $(".modal-container").append(modalTemplate(modal));
     $(".modal-content").html(modal.content);
     modalContainer.fadeToggle().children(".project-modal").slideToggle();
@@ -61,7 +61,7 @@ jQuery( function($) {
 
   $(".modal-container").click(closeModal);
 
-  skillNavTemplate = _.template($("#skill-navbar-template").html());
+  var skillNavTemplate = _.template($("#skill-navbar-template").html());
 
   _.each(skills, function(skill) {
     $(".skills-navbar").children("ul").append(skillNavTemplate(skill));
