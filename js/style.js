@@ -73,4 +73,23 @@ jQuery( function($) {
     $(this).stop().animate({ opacity: 0.7 }, 100);
   });
 
+  $(".social-icon").hover( function() {
+    $(".social-text").text(
+      $(this).stop().animate({ opacity : 1 }, 100)
+	.attr("data-display"))
+      .stop().animate({ opacity : 1 }, 200);
+  }, function() {
+    $(this).stop().animate({ opacity : 0.7 }, 100);
+    $(".social-text").stop().animate({ opacity : 0 }, 300);
+  }).click( function(e) {
+    var href = $(this).attr("href");
+    if (href) {
+      if (href.charAt(0) === "m") {
+	window.open(href, "_self");
+      } else {
+	window.open(href, "_blank");
+      }
+    }
+  });
+
 });
