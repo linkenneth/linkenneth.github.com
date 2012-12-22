@@ -72,4 +72,10 @@ skills = [
     level : 5
   },
 
+  {
+    name : "MySQL",
+    color : "pink",
+    level : 5
+  },
+
 ]
