@@ -25,7 +25,7 @@ modals = {
     name: "Big Hack (Stanford vs. Cal) - Thunder-Ant",
     link: "https://github.com/linkenneth/bighack",
     image: "img/thunder-ant-sharpened.png",
-    quote: "WTF? THUNDER ANT?"
+    quote: "Meshing CS and art"
   },
 
   chain_reaction: {
@@ -57,7 +57,7 @@ modals = {
     name: "Benchmark Suite",
     link: "https://github.com/linkenneth/benchmark",
     image: "img/benchmark.png",
-    quote: "Benchmarking different algorithms on different languages"
+    quote: "Benchmarking various algorithms on different languages"
   },
 
   eeg: {

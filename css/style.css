@@ -319,7 +319,7 @@ p.social-text {
 /* === Footer === */
 .footer {
     margin-top: 70px;
-    padding: 70px 0;  /* pads both top and bottom by 70px */
+    padding: 70px;
     border-top: 1px solid #e5e5e5;
     background: url(../img/subtle-pattern-5.jpg);
 }
