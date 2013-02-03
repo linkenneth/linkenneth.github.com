@@ -48,7 +48,7 @@ modals = {
     id: "lines_of_action",
     name: "CS61B - Lines of Action",
     link: "https://github.com/linkenneth/loa",
-    image: "img/mind-scorpion.jpg",
+    image: "img/lines-of-action.jpg",
     quote: "CS61B final project"
   },
 
