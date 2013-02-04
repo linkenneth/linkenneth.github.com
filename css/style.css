@@ -236,6 +236,17 @@ p.social-text {
     padding-left: 10px;
 }
 
+.modal-date {
+    text-align: right;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
 .modal-content {
     text-align: left;
     margin-left: 100px;
@@ -247,7 +258,6 @@ p.social-text {
 }
 
 .modal-thumb {
-    margin: 10px auto 20px;
     display: block;
     min-width: 60%;
     max-width: 85%;
