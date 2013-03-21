@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1" xmlns="http://www.gexf.net/1.1draft">
   <meta lastmodifieddate="2009-03-20">
     <creator>Kenneth Lin</creator>
     <description>Graph of technologies and experiences</description>
@@ -8,6 +8,7 @@
     <attributes class="node">
       <attribute id="type" title="type" type="string"/>
       <attribute id="skill-level" title="skill-level" type="integer"/>
+      <attribute id="color" title="color" type="string"/>
     </attributes>
     <nodes>
 
@@ -15,13 +16,85 @@
 	<attvalues>
 	  <attvalue for="type" value="language"/>
 	  <attvalue for="skill-level" value="94"/>
+	  <attvalue for="color" value="#008000"/>
 	</attvalues>
+	<viz:color b="45" g="72" r="216"/>
       </node>
 
       <node id="java" label="Java">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="86"/>
+	  <attvalue for="skill-level" value="89"/>
+	</attvalues>
+      </node>
+
+      <node id="js" label="JavaScript">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="77"/>
+	</attvalues>
+      </node>
+
+      <node id="css" label="CSS">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="69"/>
+	</attvalues>
+      </node>
+
+      <node id="html" label="HTML">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="66"/>
+	</attvalues>
+      </node>
+
+      <node id="c" label="C">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="57"/>
+	</attvalues>
+      </node>
+
+      <node id="bash" label="Bash">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="60"/>
+	</attvalues>
+      </node>
+
+      <node id="cython" label="Cython">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="30"/>
+	</attvalues>
+      </node>
+
+      <node id="r" label="R">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="30"/>
+	</attvalues>
+      </node>
+
+      <node id="ruby" label="Ruby">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="28"/>
+	</attvalues>
+      </node>
+
+      <node id="arduino" label="Arduino">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="22"/>
+	</attvalues>
+      </node>
+
+      <node id="mysql" label="MySQL">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="28"/>
 	</attvalues>
       </node>
 
@@ -30,11 +103,44 @@
 	  <attvalue for="type" value="framework"/>
 	  <attvalue for="skill-level" value="30"/>
 	</attvalues>
+	<viz:color b="255" g="2" r="216"/>
+      </node>
+
+      <node id="hadoop" label="Hadoop">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="30"/>
+	</attvalues>
+      </node>
+
+      <node id="nodejs" label="Node.js">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="35"/>
+	</attvalues>
+      </node>
+
+      <node id="expressjs" label="Express JS">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="35"/>
+	</attvalues>
+      </node>
+
+      <node id="rc-cars" label="MindScorpion RC Cars">
+	<attvalues>
+	  <attvalue for="type" value="project"/>
+	</attvalues>
+	<viz:color b="40" g="92" r="77"/>
       </node>
 
     </nodes>
     <edges>
       <edge id="python-sage" source="python" target="sage" />
+      <edge id="java-hadoop" source="java" target="hadoop" />
+      <edge id="js-nodejs" source="js" target="nodejs" />
+      <edge id="python-rc-cars" source="python" target="rc-cars" />
+      <edge id="arduino-rc-cars" source="arduino" target="rc-cars" />
     </edges>
   </graph>
 </gexf>

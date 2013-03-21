@@ -1,6 +1,6 @@
-function init() {
+function initGraph() {
   // Instanciate sigma.js and customize rendering :
-  var sigInst = sigma.init(document.getElementById('graph')).drawingProperties({
+  var sigInst = sigma.init(document.getElementById('skill-graph')).drawingProperties({
     defaultLabelColor: '#fff',
     defaultLabelSize: 14,
     defaultLabelBGColor: '#fff',
@@ -65,8 +65,4 @@ function init() {
   sigInst.draw();
 }
 
-if (document.addEventListener) {
-  document.addEventListener("DOMContentLoaded", init, false);
-} else {
-  window.onload = init;
-}
+$(window).load( function() { initGraph(); } );

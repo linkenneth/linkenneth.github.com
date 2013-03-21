@@ -1,1 +1,0 @@
-/home/link/lib/js/sigma.parseGexf.js

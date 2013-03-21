@@ -61,18 +61,6 @@ jQuery( function($) {
 
   $(".modal-container").click(closeModal);
 
-  var skillNavTemplate = _.template($("#skill-navbar-template").html());
-
-  _.each(skills, function(skill) {
-    $(".skills-navbar").children("ul").append(skillNavTemplate(skill));
-  });
-
-  $(".skills-navbar").find(".skill-item").hover( function() {
-    $(this).stop().animate({ opacity : 1 }, 100);
-  }, function() {
-    $(this).stop().animate({ opacity: 0.7 }, 100);
-  });
-
   $(".social-icon").hover( function() {
     $(".social-text").text(
       $(this).stop().animate({ opacity : 1 }, 100)
