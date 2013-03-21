@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+  <meta lastmodifieddate="2009-03-20">
+    <creator>Kenneth Lin</creator>
+    <description>Graph of technologies and experiences</description>
+  </meta>
+  <graph mode="static" defaultedgetype="directed">
+    <attributes class="node">
+      <attribute id="type" title="type" type="string"/>
+      <attribute id="skill-level" title="skill-level" type="integer"/>
+    </attributes>
+    <nodes>
+
+      <node id="python" label="Python">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="94"/>
+	</attvalues>
+      </node>
+
+      <node id="java" label="Java">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="86"/>
+	</attvalues>
+      </node>
+
+      <node id="sage" label="Sage">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="30"/>
+	</attvalues>
+      </node>
+
+    </nodes>
+    <edges>
+      <edge id="python-sage" source="python" target="sage" />
+    </edges>
+  </graph>
+</gexf>
