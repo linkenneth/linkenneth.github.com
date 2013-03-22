@@ -9,7 +9,7 @@ function initGraph() {
     defaultEdgeType: 'curve'
   }).graphProperties({
     minNodeSize: 0.5,
-    maxNodeSize: 5,
+    maxNodeSize: 6,
     minEdgeSize: 1,
     maxEdgeSize: 1
   }).mouseProperties({
