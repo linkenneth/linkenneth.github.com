@@ -12,6 +12,7 @@
     </attributes>
     <nodes>
 
+      <!-- Languages -->
       <node id="python" label="Python">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
@@ -98,6 +99,7 @@
 	</attvalues>
       </node>
 
+      <!-- Frameworks -->
       <node id="sage" label="Sage">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
@@ -127,6 +129,23 @@
 	</attvalues>
       </node>
 
+      <!-- Libraries -->
+      <node id="jquery" label="JQuery">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="65"/>
+	</attvalues>
+	<viz:color b="99" g="120" r="2"/>
+      </node>
+
+      <node id="sigmajs" label="sigma.js">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="95"/>
+	</attvalues>
+      </node>
+
+      <!-- Projects -->
       <node id="rc-cars" label="MindScorpion RC Cars">
 	<attvalues>
 	  <attvalue for="type" value="project"/>
@@ -134,13 +153,37 @@
 	<viz:color b="40" g="92" r="77"/>
       </node>
 
+      <node id="portfolio" label="Portfolio Site">
+	<attvalues>
+	  <attvalue for="type" value="project"/>
+	</attvalues>
+      </node>
+
     </nodes>
+
     <edges>
       <edge id="python-sage" source="python" target="sage" />
+      <edge id="python-cython" source="python" target="cython" />
+      <edge id="cython-sage" source="cython" target="sage" />
+
       <edge id="java-hadoop" source="java" target="hadoop" />
+
       <edge id="js-nodejs" source="js" target="nodejs" />
+      <edge id="html-js" source="html" target="js" />
+      <edge id="html-css" source="html" target="css" />
+      <edge id="js-css" source="js" target="css" />
+      <edge id="js-jquery" source="js" target="jquery" />
+      <edge id="js-sigmajs" source="js" target="sigmajs" />
+
+      <edge id="js-portfolio" source="js" target="portfolio" />
+      <edge id="css-portfolio" source="css" target="portfolio" />
+      <edge id="html-portfolio" source="html" target="portfolio" />
+      <edge id="jquery-portfolio" source="jquery" target="portfolio" />
+
       <edge id="python-rc-cars" source="python" target="rc-cars" />
       <edge id="arduino-rc-cars" source="arduino" target="rc-cars" />
+
     </edges>
+
   </graph>
 </gexf>
