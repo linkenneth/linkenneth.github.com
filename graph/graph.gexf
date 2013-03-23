@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1" xmlns="http://www.gexf.net/1.1draft">
-  <meta lastmodifieddate="2009-03-20">
+  <meta lastmodifieddate="2013-03-21">
     <creator>Kenneth Lin</creator>
     <description>Graph of technologies and experiences</description>
   </meta>
@@ -17,7 +17,6 @@
 	<attvalues>
 	  <attvalue for="type" value="language"/>
 	  <attvalue for="skill-level" value="94"/>
-	  <attvalue for="color" value="#008000"/>
 	</attvalues>
 	<viz:color b="45" g="72" r="216"/>
       </node>
@@ -115,7 +114,7 @@
 	</attvalues>
       </node>
 
-      <node id="nodejs" label="Node.js">
+      <node id="nodejs" label="node.js">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
 	  <attvalue for="skill-level" value="35"/>
@@ -130,7 +129,7 @@
       </node>
 
       <!-- Libraries -->
-      <node id="jquery" label="JQuery">
+      <node id="jquery" label="jQuery">
 	<attvalues>
 	  <attvalue for="type" value="library"/>
 	  <attvalue for="skill-level" value="65"/>
@@ -142,6 +141,13 @@
 	<attvalues>
 	  <attvalue for="type" value="library"/>
 	  <attvalue for="skill-level" value="95"/>
+	</attvalues>
+      </node>
+
+      <node id="openmp" label="OpenMP">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="45"/>
 	</attvalues>
       </node>
 
@@ -159,6 +165,32 @@
 	</attvalues>
       </node>
 
+      <!-- Miscellaneous Skills -->
+      <node id="emacs" label="Emacs">
+	<attvalues>
+	  <attvalue for="type" value="misc"/>
+	</attvalues>
+	<viz:color b="220" g="252" r="170"/>
+      </node>
+
+      <node id="vim" label="Vim">
+	<attvalues>
+	  <attvalue for="type" value="misc"/>
+	</attvalues>
+      </node>
+
+      <node id="git" label="Git">
+	<attvalues>
+	  <attvalue for="type" value="misc"/>
+	</attvalues>
+      </node>
+
+      <node id="linux" label="Linux">
+	<attvalues>
+	  <attvalue for="type" value="misc"/>
+	</attvalues>
+      </node>
+
     </nodes>
 
     <edges>
@@ -167,6 +199,8 @@
       <edge id="cython-sage" source="cython" target="sage" />
 
       <edge id="java-hadoop" source="java" target="hadoop" />
+
+      <edge id="c-openmp" source="c" target="openmp" />
 
       <edge id="js-nodejs" source="js" target="nodejs" />
       <edge id="html-js" source="html" target="js" />

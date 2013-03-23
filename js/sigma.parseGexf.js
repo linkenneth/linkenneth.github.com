@@ -105,7 +105,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
       }
       
       // Create Node
-      var node = {label:label, size:size, x:x, y:y, attributes:[], color:color};  // The graph node
+      var node = {label:label, size:size, x:x, y:y, attributes:{}, color:color};  // The graph node
       
       // Attribute values
       var attvalueNodes = nodeNode.getElementsByTagName('attvalue');
@@ -113,7 +113,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
         var attvalueNode = attvalueNodes[k];
         var attr = attvalueNode.getAttribute('for');
         var val = attvalueNode.getAttribute('value');
-        node.attributes.push({attr:attr, val:val});
+        node.attributes[attr] = val;
       }
 
       sigmaInstance.addNode(id,node);
@@ -136,7 +136,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
         sourceID:   source,
         targetID:   target,
         label:      label,
-        attributes: []
+        attributes: {}
       };
 
       var weight = edgeNode.getAttribute('weight');
@@ -149,7 +149,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
         var attvalueNode = attvalueNodes[k];
         var attr = attvalueNode.getAttribute('for');
         var val = attvalueNode.getAttribute('value');
-        edge.attributes.push({attr:attr, val:val});
+        edge.attributes[attr] = val;
       }
 
       sigmaInstance.addEdge(edgeId++,source,target,edge);

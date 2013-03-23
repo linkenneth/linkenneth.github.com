@@ -1,5 +1,5 @@
 function initGraph() {
-  // Instanciate sigma.js and customize rendering :
+  // Instantiate sigma.js and customize rendering :
   var sigInst = sigma.init(document.getElementById('skill-graph')).drawingProperties({
     defaultLabelColor: '#fff',
     defaultLabelSize: 14,
@@ -19,6 +19,12 @@ function initGraph() {
   // Parse a GEXF encoded file to fill the graph
   // (requires "sigma.parseGexf.js" to be included)
   sigInst.parseGexf('graph/graph.gexf');
+
+  sigInst.iterNodes( function(node) {
+    node['size'] = node['attr']['attributes']['skill-level'] / 25;
+  });
+
+  // sigInst.activateFishEye();
   
   // // Bind events :
   // var greyColor = '#666';
