@@ -5,11 +5,11 @@ function initGraph() {
     defaultLabelSize: 14,
     defaultLabelBGColor: '#fff',
     defaultLabelHoverColor: '#000',
-    labelThreshold: 6,
+    labelThreshold: 10,  // displays skills over 50 at default zoom
     defaultEdgeType: 'curve'
   }).graphProperties({
-    minNodeSize: 0.5,
-    maxNodeSize: 6,
+    minNodeSize: 1,
+    maxNodeSize: 20,
     minEdgeSize: 1,
     maxEdgeSize: 1
   }).mouseProperties({
@@ -21,7 +21,9 @@ function initGraph() {
   sigInst.parseGexf('graph/graph.gexf');
 
   sigInst.iterNodes( function(node) {
-    node['size'] = node['attr']['attributes']['skill-level'] / 25;
+    node['size'] = node['attr']['attributes']['skill-level'] ?
+      node['attr']['attributes']['skill-level'] : 30;
+    console.log(node.id, node.size);
   });
 
   // sigInst.activateFishEye();

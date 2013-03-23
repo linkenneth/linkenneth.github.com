@@ -169,6 +169,7 @@
       <node id="emacs" label="Emacs">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
+	  <attvalue for="skill-level" value="85"/>
 	</attvalues>
 	<viz:color b="220" g="252" r="170"/>
       </node>
@@ -176,18 +177,21 @@
       <node id="vim" label="Vim">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
+	  <attvalue for="skill-level" value="85"/>
 	</attvalues>
       </node>
 
       <node id="git" label="Git">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
+	  <attvalue for="skill-level" value="52"/>
 	</attvalues>
       </node>
 
       <node id="linux" label="Linux">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
+	  <attvalue for="skill-level" value="78"/>
 	</attvalues>
       </node>
 
