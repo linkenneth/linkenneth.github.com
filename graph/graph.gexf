@@ -84,13 +84,6 @@
 	</attvalues>
       </node>
 
-      <node id="arduino" label="Arduino">
-	<attvalues>
-	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="22"/>
-	</attvalues>
-      </node>
-
       <node id="mysql" label="MySQL">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
@@ -125,6 +118,13 @@
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
 	  <attvalue for="skill-level" value="35"/>
+	</attvalues>
+      </node>
+
+      <node id="arduino" label="Arduino">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="22"/>
 	</attvalues>
       </node>
 
