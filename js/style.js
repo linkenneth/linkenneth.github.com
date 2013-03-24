@@ -1,6 +1,8 @@
 // JavaScript to automate the style on some items on index.html.
 jQuery( function($) {
 
+  // TODO: clean up all javascript
+
   // Automates the images in portfolio-imgs to have img-rounded class
   // Also gives images opacity of 1 on hover
   function scrollToID(j) {
@@ -46,6 +48,7 @@ jQuery( function($) {
 
   $(".portfolio-thumb").click( function(e) {
     var modal = modals[$(e.target).attr("data-target")]
+    shit = modalTemplate;
     var modalContainer = $(".modal-container").append(modalTemplate(modal));
     $(".modal-content").html(modal.content);
     modalContainer.fadeToggle().children(".project-modal").slideToggle();
@@ -54,7 +57,15 @@ jQuery( function($) {
       e.stopPropagation();
     });
     $(".modal-thumb").click( function(e) {
-      window.open($(this).attr("href"), "_blank");
+      var href = $(this).attr("href");
+      if (href) {
+	window.open(href, "_blank");
+      }
+    }).hover( function() {
+      var href = $(this).attr("href");
+      if (!href) {
+	$(this).css('cursor', 'auto');
+      }
     });
     $(".close").click(closeModal);
   });

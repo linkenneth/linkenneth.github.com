@@ -26,8 +26,6 @@ function initGraph() {
     }
   });
 
-  // sigInst.activateFishEye();
-  
   // // Bind events :
   // var greyColor = '#666';
   // sigInst.bind('overnodes',function(event){

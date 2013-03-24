@@ -97,11 +97,7 @@
 		 class="img-polaroid"/>
 	    <h2>I envision when I live.</h2>
 	    <p class="center">
-	      Here's me smiling obnoxiously as if I was wide awake but in
-	      fact this is a picture of me at 5:00 am in the H@B-IEEE
-	      Hackathon, tired as hell, and probably only able to smile
-	      because of the two cans of Monster I vehemently chugged as if
-	      it was life itself.
+	      Here's me smiling.
 	    </p>
 	  </div>
 	</div>
@@ -181,13 +177,13 @@
 	    </div>
 	  </div>
 	  <div class="span4">
-	    <div class="portfolio-thumb" id="karaoke-thumbnail"
-		 data-target="karaoke"
-		 style='background-image: url(img/karaoke-song-voter.jpg)'>
+	    <div class="portfolio-thumb" id="hadoop-bfs-thumbnail"
+		 data-target="hadoop_bfs"
+		 style='background-image: url(img/hadoop_bfs.png)'>
 	    </div>
 	    <div class="portfolio-name">
 	      <p>
-		CSUA Hackathon - Karaoke Song Voter
+		CS61C - Hadoop Parallel BFS
 	      </p>
 	    </div>
 	  </div>
@@ -216,6 +212,17 @@
 	      </p>
 	    </div>
 	  </div>
+	  <div class="span4">
+	    <div class="portfolio-thumb" id="karaoke-thumbnail"
+		 data-target="karaoke"
+		 style='background-image: url(img/karaoke-song-voter.jpg)'>
+	    </div>
+	    <div class="portfolio-name">
+	      <p>
+		CSUA Hackathon - Karaoke Song Voter
+	      </p>
+	    </div>
+	  </div>
 	</div>
 
 	<!-- Modal Container -->
@@ -233,7 +240,11 @@
 	      <h3> <%= name %> </h3>
 	    </div>
 	    <div class="modal-body">
-	      <img class="modal-thumb" src="<%= image %>" href="<%= link %>"/>
+	      <img class="modal-thumb" src="<%= image %>"
+	      <% if (typeof(link) != "undefined") { %>
+	      href="<%= link %>"
+	      <% } %>
+	      />
 	      <div class="modal-date">
 		<%= date %>
 	      </div>
@@ -304,7 +315,6 @@
     <script type="text/javascript" src="js/underscore-1.3.1.js"></script>
     <script type="text/javascript" src="js/sigma.min.js"></script>
     <script type="text/javascript" src="js/sigma.parseGexf.js"></script>
-    <script type="text/javascript" src="js/sigma.fisheye.js"></script>
 
     <script type="text/javascript" src="js/modals.js"></script>
     <script type="text/javascript" src="js/skills.js"></script>

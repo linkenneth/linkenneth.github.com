@@ -128,6 +128,13 @@
 	</attvalues>
       </node>
 
+      <node id="android" label="Android">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="12"/>
+	</attvalues>
+      </node>
+
       <!-- Libraries -->
       <node id="jquery" label="jQuery">
 	<attvalues>
@@ -147,7 +154,28 @@
       <node id="openmp" label="OpenMP">
 	<attvalues>
 	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="38"/>
+	</attvalues>
+      </node>
+
+      <node id="pyserial" label="PySerial">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
 	  <attvalue for="skill-level" value="45"/>
+	</attvalues>
+      </node>
+
+      <node id="numpy" label="NumPy">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="5"/>
+	</attvalues>
+      </node>
+
+      <node id="tkinter" label="Tkinter">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="5"/>
 	</attvalues>
       </node>
 
@@ -160,6 +188,12 @@
       </node>
 
       <node id="portfolio" label="Portfolio Site">
+	<attvalues>
+	  <attvalue for="type" value="project"/>
+	</attvalues>
+      </node>
+
+      <node id="chain-reaction" label="Chain Reaction">
 	<attvalues>
 	  <attvalue for="type" value="project"/>
 	</attvalues>
@@ -188,7 +222,7 @@
 	</attvalues>
       </node>
 
-      <node id="linux" label="Linux">
+      <node id="ubuntu" label="Ubuntu Linux">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
 	  <attvalue for="skill-level" value="78"/>
@@ -220,6 +254,20 @@
 
       <edge id="python-rc-cars" source="python" target="rc-cars" />
       <edge id="arduino-rc-cars" source="arduino" target="rc-cars" />
+      <edge id="pyserial-rc-cars" source="pyserial" target="rc-cars" />
+
+      <edge id="java-chain-reaction" source="java" target="chain-reaction" />
+      <edge id="android-chain-reaction" source="android" target="chain-reaction" />
+      <edge id="bash-chain-reaction" source="bash" target="chain-reaction" />
+      <edge id="pyserial-chain-reaction" source="pyserial" target="chain-reaction" />
+      <edge id="python-chain-reaction" source="python" target="chain-reaction" />
+      <edge id="js-chain-reaction" source="js" target="chain-reaction" />
+      <edge id="arduino-chain-reaction" source="arduino" target="chain-reaction" />
+      <edge id="nodejs-chain-reaction" source="nodejs" target="chain-reaction" />
+      <edge id="html-chain-reaction" source="html" target="chain-reaction" />
+      <edge id="css-chain-reaction" source="css" target="chain-reaction" />
+      <edge id="numpy-chain-reaction" source="numpy" target="chain-reaction" />
+      <edge id="tkinter-chain-reaction" source="tkinter" target="chain-reaction" />
 
     </edges>
 

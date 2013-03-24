@@ -74,6 +74,16 @@ modals = {
     link: "https://github.com/linkenneth/electroencephalography",
     image: "img/eeg1.jpg",
     quote: "Filtering for EEGs"
+  },
+
+  hadoop_bfs: {
+    id: "hadoop_bfs",
+    name: "CS61C - Hadoop Parallel BFS",
+    date: "March 2013",
+    // fix link
+    // link: "https://github.com/linkenneth/electroencephalography",
+    image: "img/hadoop_bfs.png",
+    quote: "Parallelizing breadth first search, analyzing big data"
   }
 
 }
