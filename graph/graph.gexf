@@ -66,14 +66,14 @@
       <node id="cython" label="Cython">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="30"/>
+	  <attvalue for="skill-level" value="20"/>
 	</attvalues>
       </node>
 
       <node id="r" label="R">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="30"/>
+	  <attvalue for="skill-level" value="25"/>
 	</attvalues>
       </node>
 
@@ -95,7 +95,7 @@
       <node id="sage" label="Sage">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="30"/>
+	  <attvalue for="skill-level" value="17"/>
 	</attvalues>
 	<viz:color b="255" g="2" r="216"/>
       </node>
@@ -103,28 +103,28 @@
       <node id="hadoop" label="Hadoop">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="30"/>
+	  <attvalue for="skill-level" value="27"/>
 	</attvalues>
       </node>
 
       <node id="nodejs" label="node.js">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="35"/>
+	  <attvalue for="skill-level" value="33"/>
 	</attvalues>
       </node>
 
       <node id="expressjs" label="Express JS">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="35"/>
+	  <attvalue for="skill-level" value="15"/>
 	</attvalues>
       </node>
 
       <node id="arduino" label="Arduino">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="22"/>
+	  <attvalue for="skill-level" value="12"/>
 	</attvalues>
       </node>
 
@@ -154,7 +154,7 @@
       <node id="openmp" label="OpenMP">
 	<attvalues>
 	  <attvalue for="type" value="library"/>
-	  <attvalue for="skill-level" value="38"/>
+	  <attvalue for="skill-level" value="29"/>
 	</attvalues>
       </node>
 
@@ -162,13 +162,14 @@
 	<attvalues>
 	  <attvalue for="type" value="library"/>
 	  <attvalue for="skill-level" value="45"/>
+	  <!-- TODO: I know more than this but not important -->
 	</attvalues>
       </node>
 
       <node id="underscorejs" label="Underscore.js">
 	<attvalues>
 	  <attvalue for="type" value="library"/>
-	  <attvalue for="skill-level" value="75"/>
+	  <attvalue for="skill-level" value="72"/>
 	</attvalues>
       </node>
 
@@ -189,7 +190,7 @@
       <node id="tkinter" label="Tkinter">
 	<attvalues>
 	  <attvalue for="type" value="library"/>
-	  <attvalue for="skill-level" value="5"/>
+	  <attvalue for="skill-level" value="15"/>
 	</attvalues>
       </node>
 
@@ -217,7 +218,7 @@
       <node id="emacs" label="Emacs">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
-	  <attvalue for="skill-level" value="85"/>
+	  <attvalue for="skill-level" value="79"/>
 	</attvalues>
 	<viz:color b="220" g="252" r="170"/>
       </node>
@@ -225,7 +226,7 @@
       <node id="vim" label="Vim">
 	<attvalues>
 	  <attvalue for="type" value="misc"/>
-	  <attvalue for="skill-level" value="85"/>
+	  <attvalue for="skill-level" value="97"/>
 	</attvalues>
       </node>
 
