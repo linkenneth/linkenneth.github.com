@@ -27,46 +27,47 @@ function initGraph() {
   });
 
   // // Bind events :
-  // var greyColor = '#666';
+  // var GREY = '#666';
   // sigInst.bind('overnodes',function(event){
   //   var nodes = event.content;
-  //   var neighbors = {};
-  //   sigInst.iterEdges(function(e){
-  //     if(nodes.indexOf(e.source)<0 && nodes.indexOf(e.target)<0){
-  //       if(!e.attr['grey']){
+  //   var neighbors = { node : 1 };
+  //   sigInst.iterEdges( function(e) {
+  //     if (nodes.indexOf(e.source) < 0 && nodes.indexOf(e.target) < 0) {
+  // 	// if edge doesn't connect the node
+  //       if (!e.attr['grey']) {
   //         e.attr['true_color'] = e.color;
-  //         e.color = greyColor;
+  //         e.color = GREY;
   //         e.attr['grey'] = 1;
   //       }
-  //     }else{
+  //     } else {  // if edge connects node at all
   //       e.color = e.attr['grey'] ? e.attr['true_color'] : e.color;
   //       e.attr['grey'] = 0;
 	
   //       neighbors[e.source] = 1;
   //       neighbors[e.target] = 1;
   //     }
-  //   }).iterNodes(function(n){
-  //     if(!neighbors[n.id]){
-  //       if(!n.attr['grey']){
+  //   }).iterNodes( function(n) {
+  //     if (!neighbors[n.id]) {
+  //       if (!n.attr['grey']){
   //         n.attr['true_color'] = n.color;
-  //         n.color = greyColor;
+  //         n.color = GREY;
   //         n.attr['grey'] = 1;
   //       }
-  //     }else{
+  //     } else {
   //       n.color = n.attr['grey'] ? n.attr['true_color'] : n.color;
   //       n.attr['grey'] = 0;
   //     }
   //   }).draw(2,2,2);
-  // }).bind('outnodes',function(){
-  //   sigInst.iterEdges(function(e){
+  // }).bind('outnodes', function() {
+  //   sigInst.iterEdges( function(e) {
   //     e.color = e.attr['grey'] ? e.attr['true_color'] : e.color;
   //     e.attr['grey'] = 0;
-  //   }).iterNodes(function(n){
+  //   }).iterNodes( function(n) {
   //     n.color = n.attr['grey'] ? n.attr['true_color'] : n.color;
   //     n.attr['grey'] = 0;
   //   }).draw(2,2,2);
   // });
-  
+
   // Draw the graph :
   sigInst.draw();
 }

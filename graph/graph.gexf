@@ -84,10 +84,10 @@
 	</attvalues>
       </node>
 
-      <node id="mysql" label="MySQL">
+      <node id="sql" label="SQL">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="28"/>
+	  <attvalue for="skill-level" value="8"/>
 	</attvalues>
       </node>
 
@@ -162,6 +162,20 @@
 	<attvalues>
 	  <attvalue for="type" value="library"/>
 	  <attvalue for="skill-level" value="45"/>
+	</attvalues>
+      </node>
+
+      <node id="underscorejs" label="Underscore.js">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="75"/>
+	</attvalues>
+      </node>
+
+      <node id="backbonejs" label="Backbone.js">
+	<attvalues>
+	  <attvalue for="type" value="library"/>
+	  <attvalue for="skill-level" value="75"/>
 	</attvalues>
       </node>
 
@@ -241,6 +255,9 @@
       <edge id="c-openmp" source="c" target="openmp" />
 
       <edge id="js-nodejs" source="js" target="nodejs" />
+      <edge id="underscorejs-nodejs" source="underscorejs" target="nodejs" />
+      <edge id="underscorejs-js" source="underscorejs" target="js" />
+      <edge id="backbonejs-js" source="backbonejs" target="js" />
       <edge id="html-js" source="html" target="js" />
       <edge id="html-css" source="html" target="css" />
       <edge id="js-css" source="js" target="css" />
@@ -251,6 +268,7 @@
       <edge id="css-portfolio" source="css" target="portfolio" />
       <edge id="html-portfolio" source="html" target="portfolio" />
       <edge id="jquery-portfolio" source="jquery" target="portfolio" />
+      <edge id="underscorejs-portfolio" source="underscorejs" target="portfolio" />
 
       <edge id="python-rc-cars" source="python" target="rc-cars" />
       <edge id="arduino-rc-cars" source="arduino" target="rc-cars" />
