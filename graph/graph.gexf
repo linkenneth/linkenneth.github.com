@@ -56,6 +56,13 @@
 	</attvalues>
       </node>
 
+      <node id="latex" label="LaTeX">
+	<attvalues>
+	  <attvalue for="type" value="language"/>
+	  <attvalue for="skill-level" value="93"/>
+	</attvalues>
+      </node>
+
       <node id="bash" label="Bash">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
@@ -132,6 +139,13 @@
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
 	  <attvalue for="skill-level" value="12"/>
+	</attvalues>
+      </node>
+
+      <node id="rails" label="Ruby on Rails">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="1"/>
 	</attvalues>
       </node>
 
