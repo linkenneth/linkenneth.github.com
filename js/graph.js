@@ -22,7 +22,7 @@ function initGraph() {
     node['size'] = node['attr']['attributes']['skill-level'] ?
       node['attr']['attributes']['skill-level'] : 30;
     if (node['attr']['attributes']['type'] === 'library') {
-      node['size'] *= 0.7;  // displays if over ~65 at defaut zoom
+      node['size'] *= 0.65;  // displays if over ~71 at defaut zoom
     }
   });
 
