@@ -149,6 +149,13 @@
 	</attvalues>
       </node>
 
+      <node id="mongo" label="MongoDB">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="12"/>
+	</attvalues>
+      </node>
+
       <!-- Libraries -->
       <node id="jquery" label="jQuery">
 	<attvalues>
