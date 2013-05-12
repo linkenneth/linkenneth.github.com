@@ -1,3 +1,4 @@
 - Changing background of masthead
 - Changing icons for pictures in about page
 - Add vim controls to navigation
+- Add links in modals for SEO
