@@ -73,7 +73,7 @@ jQuery( function($) {
   $(".modal-container").click(closeModal);
 
   $(".social-icon").hover( function() {
-    $(".social-text").text(
+    $(".social-text").html(
       $(this).stop().animate({ opacity : 1 }, 100)
 	.attr("data-display"))
       .stop().animate({ opacity : 1 }, 200);
