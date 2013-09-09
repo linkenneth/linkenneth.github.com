@@ -87,14 +87,14 @@
       <node id="ruby" label="Ruby">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="38"/>
+	  <attvalue for="skill-level" value="95"/>
 	</attvalues>
       </node>
 
       <node id="sql" label="SQL">
 	<attvalues>
 	  <attvalue for="type" value="language"/>
-	  <attvalue for="skill-level" value="8"/>
+	  <attvalue for="skill-level" value="67"/>
 	</attvalues>
       </node>
 
@@ -145,7 +145,7 @@
       <node id="rails" label="Ruby on Rails">
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
-	  <attvalue for="skill-level" value="1"/>
+	  <attvalue for="skill-level" value="93"/>
 	</attvalues>
       </node>
 
@@ -153,6 +153,27 @@
 	<attvalues>
 	  <attvalue for="type" value="framework"/>
 	  <attvalue for="skill-level" value="12"/>
+	</attvalues>
+      </node>
+
+      <node id="mysql" label="MySQL">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="52"/>
+	</attvalues>
+      </node>
+
+      <node id="nagios" label="Nagios">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="18"/>
+	</attvalues>
+      </node>
+
+      <node id="chef" label="Chef">
+	<attvalues>
+	  <attvalue for="type" value="framework"/>
+	  <attvalue for="skill-level" value="24"/>
 	</attvalues>
       </node>
 
@@ -285,6 +306,11 @@
       <edge id="js-css" source="js" target="css" />
       <edge id="js-jquery" source="js" target="jquery" />
       <edge id="js-sigmajs" source="js" target="sigmajs" />
+
+      <edge id="sql-mysql" source="sql" target="mysql" />
+      <edge id="chef-nagios" source="chef" target="nagios" />
+      <edge id="ruby-rails" source="ruby" target="rails" />
+      <edge id="rails-mysql" source="rails" target="mysql" />
 
       <edge id="js-portfolio" source="js" target="portfolio" />
       <edge id="css-portfolio" source="css" target="portfolio" />
